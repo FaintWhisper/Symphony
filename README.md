@@ -9,8 +9,9 @@ Music player built from scratch using the Electron framework. It features a clea
 
 ## Screenshots
 <div align="center">
-    <img src="/screenshots/1.png" width="700px"</img>
-    <img src="/screenshots/2.png" width="700px"</img> 
+    <img src="/screenshots/1.png" width="700px"></img>
+    <br>
+    <img src="/screenshots/2.png" width="700px"></img>
 </div>
 
 ## Building
