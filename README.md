@@ -7,7 +7,7 @@ Music player built from scratch using the Electron framework. It features a clea
 4. Enqueue and play next functionality.
 5. Media Keys support: Control the music reporduction no matter what you are doing.
 
-##Building
+## Building
 First make sure you have Node JS and Electron are already installed in your system before starting the process.
 
 Steps:
@@ -22,7 +22,7 @@ Steps:
 
 That's all! 'A dist' folder will be generated with all the binaries you need to get up and running with the program.
 
-##Use
+## Use
 After the building step ins finished, you will have to versions of the program in your system, the first one will be a classic installer to install the software in your system, the second one will be a portable copy you can run directly from anywhere you want. Use the one that best suits your needs.
 
 ## Built With
