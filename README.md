@@ -1,6 +1,6 @@
-# Music Player
+# Music Player: Music player built from scratch using the Electron framework.
 
-Music player built from scratch using the Electron framework. It features a clean and modern design, and comes along with nice functions like:
+It features a clean and modern design, and comes along with nice functions like:
 1. Speech recognition to play inmediatly the song that just came up to your mind without the need to search for it.
 2. Album and songs view.
 3. Random music play using the Fisher-Yates algorithm.
