@@ -8,8 +8,8 @@ Music player built from scratch using the Electron framework. It features a clea
 5. Media Keys support: Control the music reporduction no matter what you are doing.
 
 ## Screenshots
-![Screenshot1](/Screenshots/1.png)
-![Screenshot2](/Screenshots/2.png)
+![Screenshot1](/screenshots/1.png)
+![Screenshot2](/screenshots/2.png)
 
 ## Building
 First make sure you have Node JS and Electron are already installed in your system before starting the process.
