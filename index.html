@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<script src="./libs/color-thief.min.js"></script>
+</head>
+
+<body>
+	<div id="menu" class="menu">
+		<div class="menu-button">
+			<i class="material-icons menu-buttons">menu</i>
+		</div>
+		<div class="menu-button-row">
+			<i class="material-icons menu-buttons" data-section="songs">music_note</i>
+			<div class="labels">Songs</div>
+		</div>
+		<div class="menu-button-row">
+			<i class="material-icons menu-buttons" data-section="albums">album</i>
+			<div class="labels">Albums</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="top-bar">
+			<i id="goBack" class="material-icons go-back">keyboard_arrow_left</i>
+			<div class="section"></div>
+			<div class="right-content">
+				<div class="search">
+					<div class="wrapper">
+						<input type="text" class="search-box" placeholder="Search">
+						<div class="results-container"></div>
+					</div>
+					<i class="material-icons mic">mic_none</i>
+				</div>
+			</div>
+		</div>
+		<div class="add-music-library-wrapper">
+			<div class="note-position-1 note-amination">
+				&#9835;
+			</div>
+			<div class="note-position-2 note-amination animation-delay-2">
+				&#9833;
+			</div>
+			<div class="note-position-3 note-amination animation-delay-1">
+				&#9839;
+			</div>
+			<div class="note-position-4 note-amination">
+				&#9834;
+			</div>
+			<p class="add-text">Let's add some music!</p>
+			<div class="add-music-library">
+				<input type="text" class="add-path" placeholder="Path to your music directory">
+				<br>
+				<button class="add-button">
+					<span class="add">ADD</i>
+				</button>
+			</div>
+		</div>
+		<div id="content">
+			<div class="songs-container">
+				<div class="sort-songs">
+					<div class="sort-by-title">TITLE
+						<div id="arrow1"></div>
+					</div>
+					<div class="sort-by-artist">ARTIST
+						<div id="arrow2"></div>
+					</div>
+					<div class="sort-by-album">ALBUM
+						<div id="arrow3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="albums-container"></div>
+		</div>
+	</div>
+	<div class="control-panel">
+		<div class="playing-song">
+			<div class="playing-song-picture-container">
+				<div class="playing-song-default-picture">
+					<i class="material-icons music-note">music_note</i>
+				</div>
+				<img class="playing-song-picture"></img>
+			</div>
+			<div class="playing-song-details">
+				<div class="playing-song-title"></div>
+				<div class="playing-song-artist"></div>
+			</div>
+		</div>
+		<div class="control-buttons">
+			<div class="buttons">
+				<button id="b0">
+					<i class="material-icons">shuffle</i>
+				</button>
+				<button id="b1">
+					<i class="material-icons">skip_previous</i>
+				</button>
+				<button id="b2">
+					<i class="material-icons">play_arrow</i>
+				</button>
+				<button id="b3">
+					<i class="material-icons">pause</i>
+				</button>
+				<button id="b4">
+					<i class="material-icons">skip_next</i>
+				</button>
+				<button id="b5">
+					<i class="material-icons">repeat</i>
+				</button>
+			</div>
+			<div class="slider progress-bar">
+				<div class="playing-song-current-time"></div>
+				<input class="slider_range progress-bar_range" type="range" id="progressBar" value="0" min="0" max="100">
+				<input class="slider_range_fill progress-bar_fill" type="range" value="0" min="0" max="100">
+				<input class="slider_range_back progress-bar_back" type="range" value="0" min="0" max="100">
+				<div class="playing-song-duration"></div>
+			</div>
+			<div id="volume" class="slider volume-slider">
+				<button id="b6" data-label="Volume" class="button-label">
+					<i class="material-icons volume-button">volume_down</i>
+				</button>
+				<input class="slider_range" type="range" value="33" min="0" max="100" step="1" oninput="setVolume(this.value)" onchange="setVolume(this.value)">
+				<span class="slider_value">0</span>
+				<input class="slider_range_fill" type="range" value="33" min="0" max="100">
+				<input class="slider_range_back" type="range" value="33" min="0" max="100">
+				<script>
+					(() => {
+						const sliders = document.querySelectorAll('.slider');
+						Array.from(sliders).forEach(slider => {
+							let range = slider.querySelector('.slider_range');
+							let value = slider.querySelector('.slider_value');
+
+							if (value != null) {
+								const sliderValue = range.value;
+								value.textContent = sliderValue;
+							}
+
+							range.addEventListener('input', (e) => {
+								const sliderValue = e.target.value;
+								let offset = 0.9;
+
+								if (value != null) {
+									value.textContent = sliderValue;
+									offset = 0.7
+								}
+
+								slider.querySelector('.slider_range_fill').style.width = `calc(${Math.ceil(sliderValue * offset)}%)`;
+							});
+						});
+					})();
+				</script>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="./views/UI.js" type="text/javascript"></script>
+</body>
+
+</html>

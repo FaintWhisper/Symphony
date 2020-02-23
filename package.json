@@ -1,0 +1,14 @@
+{
+  "name": "music_player",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "description": "A well designed and beautiful music player build from the ground",
+  "main": "main.js",
+  "author": "Amit",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "microsoft-cognitiveservices-speech-sdk": "^1.6.0"
+  }
+}
