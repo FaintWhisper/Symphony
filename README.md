@@ -31,7 +31,7 @@ Steps:
 That's all! 'A dist' folder will be generated with all the binaries you need to get up and running with the program.
 
 ## Use
-After the building step ins finished, you will have to versions of the program in your system, the first one will be a classic installer to install the software in your system, the second one will be a portable copy you can run directly from anywhere you want. Use the one that best suits your needs.
+After the building step is finished, you will have two versions of the program in your system, the first one will be a classic installer to install the software in your system, the second one will be a portable copy you can run directly from anywhere you want. Use the one that best suits your needs.
 
 ## Built With
 
