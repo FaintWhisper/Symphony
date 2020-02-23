@@ -23,6 +23,8 @@ Steps:
 3. Download SOX (http://sox.sourceforge.net/) and ExifTools (https://exiftool.org/) binaries and place them inside the '/bin' folder you just created.
 4. [Optional] If you want to use the speech recognition service, you will need to request an API token for the Microsoft Cognitive Service (you can get it here: https://azure.microsoft.com/es-es/services/cognitive-services/speaker-recognition/). Now create a text file named 'API_TOKEN.txt' inside the root directory and type there the API token you just get.
 5. Open a terminal and type the following:
+   > npm install
+
    > yarn add electron-builder --dev
    
    > npm build
