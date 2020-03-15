@@ -24,8 +24,10 @@ Steps:
 4. [Optional] If you want to use the speech recognition service, you will need to request an API token for the Microsoft Cognitive Service (you can get it here: https://azure.microsoft.com/es-es/services/cognitive-services/speaker-recognition/). Now create a text file named 'API_TOKEN.txt' inside the root directory and type there the API token you just get.
 5. Open a terminal and type the following:
    > npm install
+
+   > yarn add electron-builder --dev
    
-   > npm run dist
+   > npm build
 6. Wait for the installation to complete.
 
 That's all! 'A dist' folder will be generated with all the binaries you need to get up and running with the program.

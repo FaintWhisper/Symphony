@@ -1,54 +1,52 @@
 {
-  "name": "music_player",
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=10.16.0"
-  },
-  "description": "A well designed and beautiful music player build from the ground",
-  "main": "main.js",
-  "author": "Amit",
-  "license": "GPL-3.0",
-  "scripts": {
-    "postinstall": "install-app-deps",
-    "start": "electron .",
-    "pack": "build --dir",
-    "dist": "build"
-  },
-  "build": {
-    "appId": "music-player",
-    "asar": true,
-    "dmg": {
-      "contents": [
-        {
-          "x": 110,
-          "y": 150
-        },
-        {
-          "x": 240,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ]
-    },
-    "win": {
-      "target": [
-        "NSIS",
-        "Portable"
-      ],
-      "icon": "Icon.ico"
-    }
-  },
-  "dependencies": {
-    "microsoft-cognitiveservices-speech-sdk": "^1.6.0"
-  },
-  "devDependencies": {
-    "electron-builder": "^22.4.1",
-  }
+	"name": "Music-Player",
+	"author": "RYSKZ (amitkmbt@gmail.com)",
+	"version": "1.0.0",
+	"description": "A Electron based app that features a clean and modern design, and comes along with nice functions like:\r 1. Speech recognition to play inmediatly the song that just came up to your mind without the need to search for it.\r 2. Album and songs view.\r 3. Random music play using the Fisher-Yates algorithm.\r 4. Enqueue and play next functionality.\r 5. Media Keys support: Control the music reporduction no matter what you are doing.",
+	"main": "main.js",
+	"license": "GPL-3.0",
+	"scripts": {
+		"start": "electron .",
+		"pack": "build --dir",
+		"dist": "build"
+	},
+	"build": {
+		"appId": "music-player",
+		"asar": true,
+		"dmg": {
+			"contents": [{
+					"x": 110,
+					"y": 150
+				},
+				{
+					"x": 240,
+					"y": 150,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			]
+		},
+		"win": {
+			"target": [
+				"NSIS",
+				"Portable"
+			],
+			"icon": "Icon.ico"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RYSKZ/Music-Player.git"
+	},
+	"keywords": ["music", "player", "audio", "speech recognition"],
+	"bugs": {
+		"url": "https://github.com/RYSKZ/Music-Player/issues"
+	},
+	"homepage": "https://github.com/RYSKZ/Music-Player#readme"
 }
