@@ -5,11 +5,6 @@
 	"description": "A Electron based app that features a clean and modern design, and comes along with nice functions like:\r 1. Speech recognition to play inmediatly the song that just came up to your mind without the need to search for it.\r 2. Album and songs view.\r 3. Random music play using the Fisher-Yates algorithm.\r 4. Enqueue and play next functionality.\r 5. Media Keys support: Control the music reporduction no matter what you are doing.",
 	"main": "main.js",
 	"license": "GPL-3.0",
-	"scripts": {
-		"start": "electron .",
-		"pack": "build --dir",
-		"dist": "build"
-	},
 	"build": {
 		"appId": "music-player",
 		"asar": true,
@@ -39,6 +34,10 @@
 			],
 			"icon": "Icon.ico"
 		}
+	},
+	"scripts": {
+  		"pack": "electron-builder --dir",
+  		"dist": "electron-builder"
 	},
 	"repository": {
 		"type": "git",
