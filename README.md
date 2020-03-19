@@ -1,4 +1,4 @@
-# Music Player
+# Symphony Music Player
 
 A Electron based app that features a clean and modern design, and comes along with nice functions like:
 1. Speech recognition to play inmediatly the song that just came up to your mind without the need to search for it.
