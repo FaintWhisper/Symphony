@@ -9,9 +9,9 @@ A Electron based app that features a clean and modern design, and comes along wi
 
 ## Screenshots
 <div align="center">
-    <img src="/screenshots/1.png" width="700px"></img>
+    <img src="/screenshots/First Use.png" width="700px"></img>
     <br>
-    <img src="/screenshots/2.png" width="700px"></img>
+    <img src="/screenshots/Songs.png" width="700px"></img>
 </div>
 
 ## Building

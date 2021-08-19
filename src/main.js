@@ -12,7 +12,7 @@ const createWindow = () => {
             nodeIntegration: true,
             nodeIntegrationInWorker: true,
             enableRemoteModule: true,
-            devTools: false
+            devTools: true
 		}
 	});
 
