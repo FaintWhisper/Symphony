@@ -1,4 +1,4 @@
-# Symphony Music Player
+# Symphony - Music Player
 
 A Electron based app that features a clean and modern design, and comes along with nice functions like:
 1. Speech recognition to play inmediatly the song that just came up to your mind without the need to search for it.
@@ -18,17 +18,15 @@ A Electron based app that features a clean and modern design, and comes along wi
 First make sure you have Node JS and Electron are already installed in your system before starting the process.
 
 Steps:
-1. Clone this repo to your system
-2. Create a /bin folder inside the root directory of the project.
-3. Download SOX (http://sox.sourceforge.net/) and ExifTools (https://exiftool.org/) binaries and place them inside the '/bin' folder you just created.
-4. [Optional] If you want to use the speech recognition service, you will need to request an API token for the Microsoft Cognitive Service (you can get it here: https://azure.microsoft.com/es-es/services/cognitive-services/speaker-recognition/). Now create a text file named 'API_TOKEN.txt' inside the root directory and type there the API token you just get.
-5. Open a terminal and type the following:
+1. Clone this repo.
+2. [Optional] If you want to use the speech recognition service, you will need to request an API token for the Microsoft Cognitive Service (you can get it here: https://azure.microsoft.com/es-es/services/cognitive-services/speaker-recognition/). Now create a text file named 'API_TOKEN.txt' inside the root directory and type there the API token you just get.
+3. Open a terminal and type the following:
    > npm install
    
    > npm run dist
-6. Wait for the installation to complete.
+4. Wait for the installation to complete.
 
-That's all! 'A dist' folder will be generated with all the binaries you need to get up and running with the program.
+That's all! A 'dist' folder will be created, inside you will find an installer and a portable binary, choose the one you prefer and you will be ready to get up and running with the program.
 
 ## Use
 After the building step is finished, you will have two versions of the program in your system, the first one will be a classic installer to install the software in your system, the second one will be a portable copy you can run directly from anywhere you want. Use the one that best suits your needs.
