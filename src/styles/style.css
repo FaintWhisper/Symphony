@@ -728,6 +728,10 @@ input[type=text]:focus, button:focus, i:focus {
     border-radius: 4%;
 }
 
+.song-menu-picture {
+	transform: translateZ(0);
+}
+
 .song-menu-default-picture, .playing-song-default-picture, .default-album-cover {
     display: flex;
     width: 8.3vh;
@@ -934,6 +938,7 @@ input[type=text]:focus, button:focus, i:focus {
     display: none;
     height: 100%;
     width: 100%;
+	transform: translateZ(0);
 }
 
 .playing-song-default-picture {
