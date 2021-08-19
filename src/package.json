@@ -18,7 +18,7 @@
     },
     "scripts": {
         "start": "electron .",
-        "dist:win32": "electron-builder -w --ia32 --config.nsis.artifactName=\"${productName} ${version} Setup x32.${ext}\" --config.portable.artifactName=\"${productName} ${version} x32.${ext}\"",
+        "dist:win32": "electron-builder -w --ia32 --config.nsis.artifactName=\"${productName} v${version} Setup x32.${ext}\" --config.portable.artifactName=\"${productName} v${version} x32.${ext}\"",
         "dist:win64": "electron-builder -w --x64",
         "dist:linux": "electron-builder -l",
         "dist:macOS": "electron-builder -m",
@@ -45,7 +45,7 @@
                 }
             ],
             "category": "Audio",
-            "artifactName": "Symphony_${version}-${arch}.${ext}"
+            "artifactName": "Symphony_v${version}-${arch}.${ext}"
         },
         "mac": {
             "category": "public.app-category.music"
@@ -57,15 +57,15 @@
             ]
         },
         "nsis": {
-            "artifactName": "${productName} ${version} Setup.${ext}",
+            "artifactName": "${productName} v${version} Setup.${ext}",
             "oneClick": false,
             "license": "LICENSE.txt",
             "allowToChangeInstallationDirectory": true,
-            "uninstallDisplayName": "${productName} ${version}",
+            "uninstallDisplayName": "${productName} v${version}",
             "deleteAppDataOnUninstall": true
         },
         "portable": {
-            "artifactName": "${productName} ${version}.${ext}",
+            "artifactName": "${productName} v${version}.${ext}",
             "requestExecutionLevel": "user"
         }
     }
