@@ -20,7 +20,7 @@ module.exports = {
 //Records the user's voice
 const recordAudio = () => {
 	const filename = "audio.wav";
-	const soxPath = path.join(__dirname, '../../bin/SOX');
+	const soxPath = path.join(__dirname, '../../bin/SoX');
 	process.chdir(soxPath);
 
 	// Starts recording
