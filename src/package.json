@@ -10,11 +10,11 @@
     "author": "Amit",
     "license": "GPL-3.0",
     "dependencies": {
-        "microsoft-cognitiveservices-speech-sdk": "^1.6.0"
+        "microsoft-cognitiveservices-speech-sdk": "^1.48.0"
     },
     "devDependencies": {
         "electron": "^18.3.7",
-        "electron-builder": "^22.11.7"
+        "electron-builder": "^26.8.1"
     },
     "scripts": {
         "start": "electron .",
